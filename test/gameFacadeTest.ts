@@ -47,7 +47,7 @@ describe("########## Verify the Game Facade ##########", () => {
     const team3 = { name: "Team3", userName: "t3", password: secretHashed, role: "team" }
     await userCollection.insertMany([team1, team2, team3])
 
-    await positionCollection.deleteMany({})
+    //await positionCollection.deleteMany({})
 
     const positions = [
       positionCreator(12.48, 55.77, team1.userName, team1.name, true),
